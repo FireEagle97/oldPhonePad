@@ -12,3 +12,4 @@ c:\myProjects\oldPhonePad\OldPhonePad\obj\Debug\net8.0\refint\OldPhonePad.dll
 c:\myProjects\oldPhonePad\OldPhonePad\obj\Debug\net8.0\OldPhonePad.pdb
 c:\myProjects\oldPhonePad\OldPhonePad\obj\Debug\net8.0\OldPhonePad.genruntimeconfig.cache
 c:\myProjects\oldPhonePad\OldPhonePad\obj\Debug\net8.0\ref\OldPhonePad.dll
+c:\myProjects\oldPhonePad\OldPhonePad\obj\Debug\net8.0\OldPhonePad.sourcelink.json
