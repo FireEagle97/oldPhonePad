@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 
 namespace OldPhonePad
 {
-    internal class OldPhoneConverter
+    public class OldPhoneConverter
     {
         public OldPhoneConverter(){
 
