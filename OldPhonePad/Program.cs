@@ -1,91 +1,29 @@
-﻿using System.Text;
-using System.Text.RegularExpressions;
-
-public class OldPhonePad
+﻿namespace OldPhonePad
 {
-    public static void Main(string[] args)
+    class Program
     {
-        string input;
-        while (true)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Enter the string input ending with #:");
-            input = Console.ReadLine() ?? string.Empty;
-            if(isValidInput(input)){
-                break;
-            }else{
-                Console.WriteLine("Invalid input. Please use only digits from 1-9, space, *, and #");
-            }
-        }
-        string output = ConvertOldPhoneNumbers(input);
-        Console.WriteLine(output);
-    }
-    public static bool isValidInput(string input){
-        string pattern = @"^[1-9 *]+#$";
-        return Regex.IsMatch(input , pattern);
-    }
-    public static string ConvertOldPhoneNumbers(string input)
-    {
-        if (string.IsNullOrEmpty(input))
-        {
-            return "";
-        }
-        Dictionary<char, string> keypadMap = new Dictionary<char, string>
-        {
-            {'2',"ABC" },
-            {'3',"DEF"},
-            {'4',"GHI" },
-            {'5',"JKL"},
-            {'6',"MNO"},
-            {'7' ,"PQRS"},
-            {'8',"TUV"},
-            {'9',"WXYZ"},
-        };
-        StringBuilder output = new StringBuilder();
-        int count = 0;
-        char currentDigit = ' ';
-        foreach (char c in input)
-        {
-            if (char.IsDigit(c))
+            string input;
+            OldPhoneConverter phoneObj = new OldPhoneConverter();
+            while (true)
             {
-                if (currentDigit == c)
+                Console.WriteLine("Enter the string input ending with #:");
+                input = Console.ReadLine() ?? string.Empty;
+                if (phoneObj.isValidInput(input))
                 {
-                    count++;
+                    break;
                 }
                 else
                 {
-                    if (currentDigit != ' ' && keypadMap.ContainsKey(currentDigit))
-                    {
-                        string letters = keypadMap[currentDigit];
-                        output.Append(letters[(count - 1) % letters.Length]);
-
-                    }
-                    currentDigit = c;
-                    count = 1;
+                    Console.WriteLine("Invalid input. Please use only digits from 1-9, space, *, and #");
                 }
             }
-            else
-            {
-
-                if (currentDigit != ' ' && keypadMap.ContainsKey(currentDigit))
-                {
-                    string letters = keypadMap[currentDigit];
-                    output.Append(letters[(count - 1) % letters.Length]);
-
-                }
-                if (c == '*')
-                {
-                    if (output.Length > 0)
-                    {
-                        output.Length--;
-                    }
-                }
-                count = 0;
-                currentDigit = c;
-
-            }
+            string output = phoneObj.ConvertOldPhoneNumbers(input);
+            Console.WriteLine(output);
         }
-        return output.ToString();
-
+        
     }
 }
+
 
