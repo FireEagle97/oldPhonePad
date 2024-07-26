@@ -14,3 +14,6 @@ This is a console application that takes an input from the user and convert it t
 
 * "44#" => output: E
 * "227*#" => output: B
+## Testing
+
+* run dotnet test on a new terminal to run all the current tests
