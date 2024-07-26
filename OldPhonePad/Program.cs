@@ -10,7 +10,7 @@
             {
                 Console.WriteLine("Enter the string input ending with #:");
                 input = Console.ReadLine() ?? string.Empty;
-                if (phoneObj.isValidInput(input))
+                if (phoneObj.isValidInput(input) || input == "cancel")
                 {
                     break;
                 }
