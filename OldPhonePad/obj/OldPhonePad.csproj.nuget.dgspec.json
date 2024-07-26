@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\myProjects\\oldPhonePad\\OldPhonePad\\OldPhonePad.csproj": {}
+    "C:\\myProjects\\oldPhonePad\\OldPhonePad\\OldPhonePad.csproj": {}
   },
   "projects": {
-    "c:\\myProjects\\oldPhonePad\\OldPhonePad\\OldPhonePad.csproj": {
+    "C:\\myProjects\\oldPhonePad\\OldPhonePad\\OldPhonePad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\myProjects\\oldPhonePad\\OldPhonePad\\OldPhonePad.csproj",
+        "projectUniqueName": "C:\\myProjects\\oldPhonePad\\OldPhonePad\\OldPhonePad.csproj",
         "projectName": "OldPhonePad",
-        "projectPath": "c:\\myProjects\\oldPhonePad\\OldPhonePad\\OldPhonePad.csproj",
+        "projectPath": "C:\\myProjects\\oldPhonePad\\OldPhonePad\\OldPhonePad.csproj",
         "packagesPath": "C:\\Users\\danym\\.nuget\\packages\\",
-        "outputPath": "c:\\myProjects\\oldPhonePad\\OldPhonePad\\obj\\",
+        "outputPath": "C:\\myProjects\\oldPhonePad\\OldPhonePad\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\danym\\AppData\\Roaming\\NuGet\\NuGet.Config",

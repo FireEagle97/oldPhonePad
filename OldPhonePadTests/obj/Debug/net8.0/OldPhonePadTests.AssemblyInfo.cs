@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OldPhonePadTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74b42d14f16650661ae329ccc0862c0ff8b67c23")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a0b15911992ea5a97d504cb120922bbb07b3269")]
 [assembly: System.Reflection.AssemblyProductAttribute("OldPhonePadTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OldPhonePadTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
